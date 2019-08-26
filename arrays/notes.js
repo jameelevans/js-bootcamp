@@ -13,7 +13,7 @@ const notes = ['Note 1', 'Note 2', 'Note 3']
 // notes.unshift('My first note')
 
 //Starts at 1 positons then delete 1 item
-notes.splice(1, 1)
+//notes.splice(1, 1)
 
 //Add a new item in second spot and moves all other items over 1 spot
 //notes.splice(1, 0, 'This is the new second item')
@@ -22,6 +22,11 @@ notes.splice(1, 1)
 //notes.splice(1, 1, 'This is the new second item')
 
 notes[2] = 'This is now the new note 3'
+
+notes.forEach(function(item, index) {
+    console.log(index)
+    console.log(item)
+})
 
 //Get the number of items inside an array
 console.log(notes.length)
