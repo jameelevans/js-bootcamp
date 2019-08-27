@@ -1,3 +1,4 @@
+<h1>Javascript Bootcamp Course<h1>
 <h2>Description</h2>
 <p>JavaScript is the most popular programming language out there, but that doesn’t mean it’s easy to learn. You end up wasting time on out-of-date courses and incomplete YouTube tutorials that talk about a JavaScript features without showing how to use them when building real-world applications.</p>
 
