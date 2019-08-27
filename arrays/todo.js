@@ -22,9 +22,10 @@ console.log(`You have ${todos.length} items on your to do list!`)
 
 // * Foreach challenge
 todos.forEach(function(item, index){
+    //Makes sure the numbering starts at 1 and not 0
     const num = index + 1
+    // Print all items in a numbered list
     console.log(`${num}. ${item}`)
 })
-// 1. The first item
-// 2. Th esecond item
+
 

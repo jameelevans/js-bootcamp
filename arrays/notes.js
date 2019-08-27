@@ -38,3 +38,11 @@ console.log(notes.length)
 // console.log(notes[notes.length - 2])
 console.log(notes)
 
+// Counting...1
+for (let count = 2; count >= 0; count--) {
+    console.log(count)
+}
+
+for (let count = 0; count < notes.length; count++) {
+    console.log(notes[count])
+}
