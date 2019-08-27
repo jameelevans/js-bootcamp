@@ -21,6 +21,6 @@ let officeHours = function () {
 }
 
 
-
+//Prints the officeHours function result to console
 console.log(officeHours())
 

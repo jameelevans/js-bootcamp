@@ -28,4 +28,13 @@ todos.forEach(function(item, index){
     console.log(`${num}. ${item}`)
 })
 
+//*** *For Challenge -> Create a for count for that print like the forEach statement above
+// 1. Order cat food
+// 2. Clean Kithen
+//....
+// for (let count = 0; count < todos.length; count++) {
+//     const num = count + 1
+//     const todo = todos[count]
+//     console.log(`${num}. ${todo}`)    
+// }
 
