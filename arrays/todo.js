@@ -1,40 +1,44 @@
 //Create an array with 5 things to do
-const todos = ['Walk the dog', 'Feed the fish', 'Change kitty litter', 'Buy groceries', 'Wash the car']
+// 1. Convert array to array of object ->text, completed property
+const todos = [{
+    text: 'Walk the dog',
+    completed: false
+}, {
+    text: 'Feed the fish',
+    completed: true
+}, {
+    text: 'Change kitty litter',
+    completed: false
+}, {
+    text: 'Buy groceries',
+    completed: true
+}, {
+    text: 'Wash the car',
+    completed: false
+}]
 
- // *ARRAYS Manipulating Arrays with Methods Cahallenge*
+//Find item in list and delete it
+// 2. Create a function to remove a todo by text value
+const deleteTodo = function(todos, todoText) {
+    const index = todos.findIndex(function (todo) {
+        return todo.text.toLowerCase() === todoText.toLowerCase()
+    })
+    if (index > 1) {
+        todos.splice(index, 1)
+    }
+}
 
-//Delete the thrid item -> Third item has an index of 2
-todos.splice(2, 1)
+//Function that only shows incomplete todos
+const getThingsToDo = function (todos) {
+    return todos.filter(function (todo, index) {
+        return !todo.completed
+        
+    })
+}
 
-//Add new item to the end
-todos.push('My new item on end')
 
-//Delete the first item from list
-todos.shift()
+console.log(getThingsToDo(todos))
 
-//Print message that include length. You have x todos
-console.log(`You have ${todos.length} items on your to do list!`)
-//console.log(todos)
 
-//Print the first and second to last items to terminal -> Todo: Walk the Dog
-//console.log(`Todo: ${todos[0]}`)
-//console.log(`Todo: ${todos[todos.length - 2]}`)
-
-// * Foreach challenge
-todos.forEach(function(item, index){
-    //Makes sure the numbering starts at 1 and not 0
-    const num = index + 1
-    // Print all items in a numbered list
-    console.log(`${num}. ${item}`)
-})
-
-//*** *For Challenge -> Create a for count for that print like the forEach statement above
-// 1. Order cat food
-// 2. Clean Kithen
-//....
-// for (let count = 0; count < todos.length; count++) {
-//     const num = count + 1
-//     const todo = todos[count]
-//     console.log(`${num}. ${todo}`)    
-// }
-
+// deleteTodo(todos, 'Buy groceries')
+// console.log(todos)
